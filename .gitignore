@@ -1,0 +1,6 @@
+target/
+/python/doc/
+*.swp
+/result
+/.direnv
+/.venv

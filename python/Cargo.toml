@@ -1,0 +1,22 @@
+[package]
+name = "pyadess"
+version = "0.1.0"
+edition = "2021"
+exclude = ["bin/", "include/", "lib/", "lib64", "share/", "pyvenv.cfg"]
+authors = ["Frederik Ritter <nairobi1250@gmail.com>"]
+description = "Python bindings for arbitrary distribution trellis shaping"
+readme = "README.md"
+license = "GPL-3.0"
+keywords = ["communications", "probabilistic-shaping", "ess", "oess"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "pyadess"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.17.3", features = ["extension-module", "multiple-pymethods"] }
+ad-ess = { path = "../rust" }
+numpy = "0.17.2"
+ndarray = "0.15.1"
+rug = "1.18.0"
