@@ -27,7 +27,7 @@ jobs:
       # Install dependencies (including pdoc)
       - run: pip install maturin numpy pdoc
       # Build your documentation into docs/.
-      - run: cd python && mk_doc.sh
+      - run: cd python && bash mk_doc.sh
 
       - uses: actions/upload-pages-artifact@v4
         with:
