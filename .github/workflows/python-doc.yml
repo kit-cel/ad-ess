@@ -28,6 +28,7 @@ jobs:
       - run: source .venv/bin/activate
       # Install dependencies (including pdoc)
       - run: pip install maturin numpy pdoc
+      - uses: mxschmitt/action-tmate@v3
       # Build your documentation into docs/.
       - run: cd python && bash mk_doc.sh
 
