@@ -24,6 +24,8 @@ jobs:
         with:
           python-version: '3.11'
 
+      - run: python -m venv .venv
+      - run: source .venv/bin/activate
       # Install dependencies (including pdoc)
       - run: pip install maturin numpy pdoc
       # Build your documentation into docs/.
