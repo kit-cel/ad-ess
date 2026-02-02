@@ -20,21 +20,15 @@ jobs:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v6
-        with:
-          python-version: '3.11'
 
-      - run: python -m venv .venv
-      - run: source .venv/bin/activate
-      # Install dependencies (including pdoc)
-      - run: pip install maturin numpy pdoc
-      - uses: mxschmitt/action-tmate@v3
-      # Build your documentation into docs/.
-      - run: cd python && bash mk_doc.sh
+      - uses: cachix/install-nix-action@v31
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+      - run: nix build .#pyadess-doc
 
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: python/doc/
+          path: result/
 
   # Deploy the artifact to GitHub pages.
   # This is a separate job so that only actions/deploy-pages has the necessary permissions.
