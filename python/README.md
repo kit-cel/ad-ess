@@ -2,7 +2,7 @@
 
 Python bindings for arbitrary-distribution enumerative sphere shaping (AD-ESS).
 
-For examples see [the example script](./example.py). For documentation see [TODO](TODO).
+For examples see [the example script](./example.py). For documentation see [here](https://kit-cel.github.io/ad-ess/pyadess.html).
 
 ## Installation
 

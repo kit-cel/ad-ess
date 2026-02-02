@@ -9,7 +9,7 @@ Unlike AD-ESS it uses energy based ordering of the sequences and thus always has
 Its complexity is the same as Laroias 1st algorithm[^2].
 
 - Rust Documentation [TODO: link]
-- Python Documentation [TODO: link]
+- [Python Documentation](https://kit-cel.github.io/ad-ess/pyadess.html)
 
 [^1]: https://arxiv.org/pdf/2512.16808.
 
@@ -25,16 +25,12 @@ Please refer to the [Rust](./rust/README.md) or [Python](./python/README.md) REA
 
 If you use this library in your research you can reference the following publication.
 
-[TODO: paper reference]
-
 ```tex
 @inproceedings{extension_rrl2026,
   title={An Extension of Enumerative Sphere Shaping for Arbitrary Channel Input Distributions},
   author={Ritter, Frederik and Rode, Andrej and Schmalen, Laurent},
   booktitle={Proceedings of the International Zurich Seminar on Information and Communication (IZS 2026)},
-  volume={TODO},
-  number={TODO},
-  year={2024}
+  year={2026}
 }
 ```
 
