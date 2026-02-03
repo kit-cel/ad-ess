@@ -1,6 +1,19 @@
 # Python bindings for AD-ESS
 
-Python bindings for arbitrary-distribution enumerative sphere shaping (AD-ESS).
+An implementation of arbitrary-distribution enumerative sphere shaping (AD-ESS)[^1].
+AD-ESS is am extension of the enumerative sphere shaping (ESS)[^2] algorithm that maps uniformly distributed bits to amplitudes with a distribution tailored to the additive white Gaussian noise (AWGN) channel.
+In AD-ESS the output distribution of the amplitudes is adaptable, making the algorithm suitable for a wide range of channels.
+The algorithm is implemented in Rust, but this package contains Python bindings for the Rust library.
+
+A second algorithm named reverse trellis shaping (RTS) is also implemented.
+Unlike AD-ESS it uses energy based ordering of the sequences and thus always has minimal rate loss.
+Its complexity is the same as Laroias 1st algorithm[^3].
+
+[^1]: https://arxiv.org/pdf/2512.16808.
+
+[^2]: F. M. J. Willems and J. J. Wuijts, "A pragmatic approach to shaped coded modulation," in Proc. IEEE Symp. on Commun. and Veh. Technol. in the Benelux, 1993.
+
+[^3]: R. Laroia, N. Farvardin and S. A. Tretter, "On optimal shaping of multidimensional constellations," in IEEE Trans. Inf. Theory, vol. 40, no. 4, pp. 1044-1056, July 1994, doi: 10.1109/18.335969.
 
 For examples see [the example script](./example.py). For documentation see [here](https://kit-cel.github.io/ad-ess/pyadess.html).
 

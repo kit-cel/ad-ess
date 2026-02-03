@@ -9,12 +9,12 @@ A second algorithm named reverse trellis shaping (RTS) is also implemented.
 Unlike AD-ESS it uses energy based ordering of the sequences and thus always has minimal rate loss.
 Its complexity is the same as Laroias 1st algorithm[^3].
 
-- Rust Documentation [TODO: link]
+- [Rust Documentation](https://docs.rs/ad-ess/latest/ad_ess/)
 - [Python Documentation](https://kit-cel.github.io/ad-ess/pyadess.html)
 
 [^1]: https://arxiv.org/pdf/2512.16808.
 
-[^2] F. M. J. Willems and J. J. Wuijts, "A pragmatic approach to shaped coded modulation," in Proc. IEEE Symp. on Commun. and Veh. Technol. in the Benelux, 1993.
+[^2]: F. M. J. Willems and J. J. Wuijts, "A pragmatic approach to shaped coded modulation," in Proc. IEEE Symp. on Commun. and Veh. Technol. in the Benelux, 1993.
 
 [^3]: R. Laroia, N. Farvardin and S. A. Tretter, "On optimal shaping of multidimensional constellations," in IEEE Trans. Inf. Theory, vol. 40, no. 4, pp. 1044-1056, July 1994, doi: 10.1109/18.335969.
 
