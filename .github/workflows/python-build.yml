@@ -29,11 +29,11 @@ jobs:
         with:
           msystem: MINGW64
           update: true
-          install: git diffutils make m4 mingw-w64-x86_64-rust mingw-w64-x86_64-gcc mingw-w64-x86_64-python-maturin
+          install: git diffutils make m4 mingw-w64-x86_64-rust mingw-w64-x86_64-gcc mingw-w64-x86_64-python-maturin mingw-w64-x86_64-python
       - uses: actions/checkout@v3
       - name: Run maturin
         run: |
-          maturin build --release -o dist --find-interpreter --target x86_64-pc-windows-gnu
+          maturin build --release -o dist --find-interpreter
         working-directory: ./python
 
   macos:
