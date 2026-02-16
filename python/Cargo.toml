@@ -3,7 +3,6 @@ name = "pyadess"
 version = "0.1.0"
 edition = "2021"
 exclude = ["bin/", "include/", "lib/", "lib64", "share/", "pyvenv.cfg"]
-authors = ["Frederik Ritter <nairobi1250@gmail.com>"]
 description = "Python bindings for arbitrary distribution trellis shaping"
 readme = "README.md"
 license = "GPL-3.0"
