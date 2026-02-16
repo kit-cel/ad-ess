@@ -33,7 +33,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run maturin
         run: |
-          maturin build --release -o dist --find-interpreter
+          maturin build --release -o dist --find-interpreter --target x86_64-pc-windows-gnu
         working-directory: ./python
 
   macos:
