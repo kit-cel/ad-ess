@@ -31,6 +31,7 @@ jobs:
           update: true
           install: git diffutils make m4 mingw-w64-x86_64-rust mingw-w64-x86_64-gcc mingw-w64-x86_64-python-maturin mingw-w64-x86_64-python
       - uses: actions/checkout@v3
+      - uses: mxschmitt/action-tmate@v3
       - name: Run maturin
         run: |
           maturin build --release -o dist --find-interpreter
