@@ -34,7 +34,7 @@ jobs:
       - uses: mxschmitt/action-tmate@v3
       - name: Run maturin
         run: |
-          maturin build --release -o dist --find-interpreter
+          maturin build --release -o dist --interpreter python3.10 python3.11 python3.12
         working-directory: ./python
 
   macos:
