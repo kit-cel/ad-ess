@@ -16,9 +16,9 @@ jobs:
           args: --release --sdist -o dist --find-interpreter
           working-directory: ./python
       - name: Upload wheels
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
-          name: wheels
+          name: wheels-linux
           path: python/dist
 
   windows:
@@ -40,9 +40,9 @@ jobs:
           maturin build --release -o dist --interpreter python3.10 python3.11 python3.12
         working-directory: ./python
       - name: Upload wheels
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
-          name: wheels
+          name: wheels-windows
           path: python/dist
 
   macos:
@@ -56,9 +56,9 @@ jobs:
           args: --release -o dist --find-interpreter
           working-directory: ./python
       - name: Upload wheels
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v6
         with:
-          name: wheels
+          name: wheels-macos
           path: python/dist
 
   publish-to-pypi:
@@ -75,7 +75,8 @@ jobs:
     - name: Download all the dists
       uses: actions/download-artifact@v6
       with:
-        name: wheels
+        pattern: wheels-*
         path: dist/
+        merge-multiple: true
     - name: Publish to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
