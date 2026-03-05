@@ -29,7 +29,7 @@ Please refer to the [Rust](./rust/README.md) or [Python](./python/README.md) REA
 If you use this library in your research you can reference the following publication.
 
 ```tex
-@inproceedings{extension_rrl2026,
+@inproceedings{extension_rrs2026,
   title={An Extension of Enumerative Sphere Shaping for Arbitrary Channel Input Distributions},
   author={Ritter, Frederik and Rode, Andrej and Schmalen, Laurent},
   booktitle={Proceedings of the International Zurich Seminar on Information and Communication (IZS 2026)},

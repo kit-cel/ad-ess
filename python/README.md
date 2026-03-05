@@ -20,6 +20,7 @@ For examples see [the example script](./example.py). For documentation see [here
 ## Installation
 
 There may currently be some issues installing PyAD-ESS on Windows as AD-ESS uses GMP which can not easily be built on Windows.
+Thanks to pre-built binary wheels, installation with `pip` should work on Windows for Python $\in \{\text{3.10}, \text{3.11}, \text{3.12}\}$.
 
 ### Using PIP
 
