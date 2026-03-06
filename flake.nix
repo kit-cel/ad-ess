@@ -24,7 +24,7 @@
       wheel_tail = "cp311-cp311-linux_x86_64";
       pyadess_cfg = rec {
         pname = "pyadess";
-        version = "0.1.0";
+        version = "0.1.1";
         wheel_file = "${pname}-${version}-${wheel_tail}.whl";
       };
 

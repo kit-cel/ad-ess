@@ -1,6 +1,6 @@
 [package]
 name = "pyadess"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 exclude = ["bin/", "include/", "lib/", "lib64", "share/", "pyvenv.cfg"]
 description = "Python bindings for arbitrary distribution trellis shaping"
