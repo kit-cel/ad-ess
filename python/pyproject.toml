@@ -6,7 +6,7 @@ build-backend = "maturin"
 name = "pyadess"
 description = "Implementation of Generalized Enumerative Sphere Shaping in Rust called Arbitrary Distribution Enumerative Sphere Shaping (AD-ESS)"
 license = "GPL-3.0-or-later"
-version = "0.1.1"
+version = "0.1.1.post1"
 requires-python = ">=3.7"
 requires = [
     "numpy"
